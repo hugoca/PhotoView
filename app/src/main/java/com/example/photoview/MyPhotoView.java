@@ -209,7 +209,7 @@ public class MyPhotoView extends View {
 
     class PhotoScakeGestrueListener implements ScaleGestureDetector.OnScaleGestureListener{
 
-        private float beginScale;
+        private float beginScale; //操作前的缩放比例
         @Override
         public boolean onScale(ScaleGestureDetector scaleGestureDetector) {
             if((curScale>smallScale&&!isEnLarge)||(curScale==smallScale&&!isEnLarge)){
